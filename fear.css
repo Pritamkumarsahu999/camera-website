@@ -1,0 +1,150 @@
+* {
+  color: rgb(255,255,255,0.7);
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.main_box{
+  background-image: url("photo.jpg");
+  height: 100vh;
+}
+
+.btn_one{
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 1px;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  transition: all 0.4s ease-out 0.7s;
+  
+}
+
+.btn_one:hover{
+  opacity:1;
+ 
+  font-size: 40px;
+}
+
+.sidebar_menu{
+  position: relative;
+  left: -310px;
+  height: 100%;
+  width: 300px;
+  background-color: rgb(255,255,255,0.2);
+  box-shadow: 2px 2px 5px white;
+  transition: all 0.8s ease-in-out 0s;
+  
+
+}
+
+.sidebar_menu:active{
+  position: relative;
+  left: 310px;
+  height: 100%;
+  width: 300px;
+  background-color: rgb(255,255,255,0.2);
+  box-shadow: 2px 2px 5px white;
+  transition: all 2s ease-in-out 0.5s;
+}
+
+.logo {
+ 
+  font-size: x-large;
+  position: relative;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 280;
+  border: 2px solid rgb(255,255,255,0.5);
+  transition: all 0.3s ease-in 0.2s;
+}
+
+.logo:hover{
+  box-shadow: 2px 2px 5px white;
+}
+.logo a{
+   text-decoration: none;
+}
+
+.btn_two{
+  position: absolute;
+  top: 20px;
+  left: 270px;
+  font-size: large;
+
+}
+.sidebar_menu li a {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  left: 40px;
+  bottom: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  height: 45px;
+  width: 260px;
+  /* border: 2px solid white; */
+  /* margin: 2px 2px 2px 2px; */
+  padding: 2px;
+}
+
+.sidebar_menu li{
+transition: all 0.4s ease-in 0.3s;
+
+}
+
+.sidebar_menu li:hover{
+  /* border: 2px solid white;
+  margin-bottom: 2px; 
+padding: 1px; */
+  box-shadow: 2px 2px 5px white;
+}
+
+
+
+.sidebar_menu li i{
+ position: relative;
+
+  left: 15px;
+  top: 27px;
+}
+
+.sidebar_menu .social_media{
+  position: relative;
+  bottom: -170px;
+  left: 33%;
+  /* color: rgb(255,255,255,1); */
+}
+
+.sidebar_menu .social_media i{
+   color: rgb(197, 232, 246); 
+   transition: all 0.2s ease-in 0.4s;
+}
+
+.sidebar_menu .social_media i:hover{
+  font-size: 25px;
+}
+
+#check{
+  display: none;
+}
+
+#check:checked ~ .sidebar_menu{
+  left:0;
+}
+
+#check:checked ~ .btn_one{
+  opacity: 0;
+}
+
+.sidebar_menu .menu{
+position: relative;
+top: 10px;
+}
+
